@@ -3,70 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Layout</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 5px;
-            padding: 1em;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #FFFFFF;
-        }
-
-        header, footer {
-            width: 100%;
-            text-align: center;
-            color: white;
-            background-color: #1976D2;
-        }
-
-        .container {
-            display: flex;
-            width: 100%;
-        }
-
-        aside {
-            flex: 1;
-            color: #212121;
-            background-color: #BBDEFB;
-        }
-
-        main {
-            flex: 2;
-            background-color: #2196F3;
-            color: white;
-        }
-
-        section {
-            background-color: #FF4081;
-            color: white;
-            margin-top: 10px;
-        }
-
-        footer {
-            margin-top: 10px;
-        }
-    </style>
+    <title>Document</title>
 </head>
+<style>
+        * {
+                box-sizing: border-box;
+                margin: 5px;
+                padding: 1em;
+        }
+
+        header, footer{
+                color: white;
+                background-color:  #1976D2;
+        }
+
+        aside{
+                color: #212121;
+                background-color: #BBDEFB;
+        }
+        section{
+                background-color: #FF4081;
+                color: white;
+        }
+
+        main{
+                background-color: #2196F3;
+                color: white;
+        }
+
+        body{
+                display: flex;
+                flex-direction: column;
+                background-color: #FFFFFF;
+        }
+
+        .row{
+                display: flex;
+                flex-direction: row;
+        }
+
+        .col{
+                display: flex;
+                flex-direction: column;
+        }
+
+        </style>
 <body>
 
-    <header>Header</header>
-
-    <div class="container">
-        <aside>
-            Aside
-            <section>Section 1</section>
-            <section>Section 2</section>
+        <header>Header</header>
+        <div class="row">
+                <aside class="col">
+                Aside
+                <section>Section 1</section>
+                <section>Section 2</section>
         </aside>
-        <main>Main Content</main>
-    </div>
+        <main>Main</main>
+        </div>
+        
+        <footer>Footer</footer>
 
-    <footer>Footer</footer>
-
+    
 </body>
 </html>
